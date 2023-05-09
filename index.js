@@ -15,7 +15,7 @@ app.use(express.json())
 app.use("/", require("./routes/webhook-route"))
 
 app.get('/', (req, res) => {
-    res.send("this is the main page")
+    res.send("hello from online domain")
 })
 
 const port = process.env.PORT || 3000
