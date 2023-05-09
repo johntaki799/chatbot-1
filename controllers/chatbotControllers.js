@@ -35,6 +35,7 @@ const postWebhook = (req, res) => {
   // Send a 200 OK response if this is a page webhook
 
   if (body.object === "page") {
+    console.log("fuck")
     body.entry.forEach((entry) => {
       let webhook_event = entry.messaging[0];
       console.log(webhook_event);
