@@ -1,6 +1,8 @@
 require("dotenv").config();
 const request = require('request');
 
+  // git@github.com:abdullah-manafikhi/chatbot.git
+
 const test = (req, res) => {
   res.send("hello from the chatbot controller");
 };
@@ -29,7 +31,7 @@ const getWebhook = (req, res) => {
 
 const postWebhook = (req, res) => {
   let body = req.body;
-  console.lof(process.env.MY_VERIFY_TOKEN)
+  console.log(process.env.MY_VERIFY_TOKEN)
   console.log(`\u{1F7EA} Received webhook:`);
   console.dir(body, { depth: null });
 
