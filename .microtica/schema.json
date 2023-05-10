@@ -23,8 +23,8 @@
         "DeploymentCustom": {
             "Type": "AWS::CloudFormation::CustomResource",
             "Properties": {
-                "MyCustomVar": {
-                    "Ref": "MyCustomVar"
+                "MY_VERIFY_TOKEN": {
+                    "Ref": "thisisarandomtoken123456"
                 }
             }
         }
